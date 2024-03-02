@@ -191,18 +191,20 @@ hr {
 }
 
 
-
-
-
+/*  WARNING */
 
 .warning {
-    background-color: #ffcccc; /* Red background color */
-    color: #990000; /* Dark red text color */
+    background-color: #ffcccc; 
+    color: #990000;
     padding: 20px;
     text-align: center;
     font-size: 18px;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 9999;
 }
-
 
 
 
