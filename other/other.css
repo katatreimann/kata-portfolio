@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #222;
+    font-family: Helvetica;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center; 
+    height: 100vh; 
+    overflow-x: hidden;
+}
+
+.centered-line {
+    width: 80%; 
+    margin: 0 auto; 
+    border-color: rgb(50, 50, 50);
+    opacity: 0.3;
+}
+
+.contentcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.contentcontainer img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+}
+
+.contentcontainer .oneimgcontainer {
+    width: 50%;
+    height: auto;
+}
+
+
+.facecontentcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 70px 0px;
+}
+
+.subfacecontentcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faceimg {
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+
+.catfaceimg {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+}
+
+.contentcontainer .monumentimg {
+    width: 30%;
+    height: auto;
+    z-index: 1;
+}
+
+.contentcontainer .thoughtsimg {
+    width: 40%;
+    height: auto;
+}
+
+.contentcontainer .facegifimg {
+    width: 50%;
+    height: auto;
+}
+
+.contentcontainer .dizzyimg {
+    width: 30%;
+    height: auto;
+}
+
+
+.contentcontainer .roosterimg {
+    width: 30%;
+    height: auto;
+}
+
+.contentcontainer .threechairsimg {
+    width: 60%;
+    height: auto;
+}
+
+
+
+
+  /*  BACK BUTTON  */
+
+  .back-button {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+    color: #222;
+    text-decoration: none;
+  }
+
+
+  .text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px 50px;
+}

@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #222;
+    /*rgb(238, 252, 85)*/
+    overflow: hidden;
+    font-family: Helvetica;
+    /* background-color: #cbb4e4; */
+    /* background-color: #cbb4e4; */
+    /* background-color: #ecdcfe;   */
+    /* background-color: #e8e8e8; */
+    background-color: #e9e9e9;
+}
+
+/* body:hover {
+    color: #cbb4e4; 
+} */
+
+
+
+.container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.kata {
+    font-size: 130px;
+}
+
+h1 {
+    font-size: 82px;
+}
+
+.mediaQueryLine {
+    display: none;
+}
+
+.text {
+    font-size: 25px;
+}
+
+.text-first-line {
+    letter-spacing: 0.7px;
+}
+
+.text-second-line {
+    letter-spacing: 0.2px;
+}
+
+.programs {
+    font-size: 13.2px;
+}
+
+.link {
+    font-size: 50px;
+    text-decoration: none;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #f4eb6c; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    background-color: #222;
+    height: 2px; 
+    margin: 12px 0; 
+    border: none;
+}
+
+.vertical-line {
+    border-left: 2.5px solid #222;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#stopButton {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(34, 34, 34, 0.5);
+    z-index: 3;
+    transition: color 0.3s ease;
+}
+
+#stopButton:hover {
+    color: #f4eb6c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* .animation-stopped p {
+    content: "start animation";
+} */
+
+
+
+/*  PORTFOLIO LAYER  */
+
+#portfolioLayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(236, 220, 254, 0.725); */
+    background-color: #e9e9e9;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 10px rgba(157, 138, 176, 0.5), 
+                -5px -5px 10px rgba(157, 138, 176, 0.5), 
+                0 5px 10px rgba(157, 138, 176, 0.5), 
+                0 -5px 10px rgba(157, 138, 176, 0.5);  */
+    box-shadow: 5px 5px 10px rgba(138, 128, 149, 0.5), /* Right shadow */
+                -5px -5px 10px rgba(138, 128, 149, 0.5), /* Left shadow */
+                0 5px 10px rgba(138, 128, 149, 0.5), /* Bottom shadow */
+                0 -5px 10px rgba(138, 128, 149, 0.5); /* Top shadow */
+    /* overflow-y: auto; */
+    /* overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    } */
+    z-index: 2;
+    /* text-transform: lowercase; */
+}
+
+#portfolioLayer a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#portfolioLayer h1 {
+    display: flex;
+    font-size: 20px;
+    width: 50%;
+    /* position:relative; */
+}
+
+
+
+
+
+
+
+
+/* Media Query*/
+
+
+@media only screen and (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .kata {
+        font-size: 165px;
+    }
+    h1 {
+        font-size: 105px;
+    }
+    #stopButton {
+        bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .kata {
+        font-size: 150px;
+    }
+    h1 {
+        font-size: 95px;
+    }
+    #stopButton {
+        bottom: 20px;
+    }
+
+    .text {
+        font-size: 23px;
+    }
+    
+    .programs {
+        font-size: 12.2px;
+        /* bottom: 0px; */
+    }
+    
+    .link {
+        font-size: 44px;
+    }
+
+    .mediaQueryLine {
+        display: block;
+    }
+
+    hr {
+        margin: 15px 0; 
+    }
+}

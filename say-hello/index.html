@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Treimann | Say hello</title>
+    <link rel="stylesheet" href="say-hello.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <a class="back-button" href="file://wsl.localhost/Ubuntu/root/kata/coding/coding.html"><i class="fas fa-arrow-left"></i></a>
+
+    <h1 class="hello">Say hello!</h1>
+
+    
+    <form id="my-form" action="https://formspree.io/f/mqkvqble" method="POST">
+        <label>Email</label>
+        <input type="email" name="email" />
+        <!-- <label>Message</label> -->
+        <!-- <input type="text" name="message" id="messageBox" /> -->
+        <label for="messageBox">Message</label>
+        <textarea id="messageBox" name="message"></textarea>
+        <button id="my-form-button">Submit</button>
+        <p id="my-form-status"></p>
+      </form>
+
+    <script src="say-hello.js"></script>
+
+</body>

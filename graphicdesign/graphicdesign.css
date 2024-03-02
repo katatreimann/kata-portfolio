@@ -1,0 +1,408 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #222;
+    font-family: Helvetica;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center; /* Horisontaalne keskendamine */
+    /* align-items: center; Vertikaalne keskendamine */
+    height: 100vh; /* Teeb kõrguse võrdseks ekraani kõrgusega */
+    overflow-x: hidden;
+}
+
+
+
+.contentcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horisontaalne keskendamine */
+    align-items: center; /* Vertikaalne keskendamine */
+    width: 100vw; /* Teeb laiuse võrdseks ekraani laiusega */
+    height: 100vh; /* Teeb kõrguse võrdseks ekraani kõrgusega */
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px;  */
+    /* top: 0; */
+}
+
+.contentcontainer img {
+    width: 100%; /* Täida konteineri laius */
+    height: 100%; /* Täida konteineri kõrgus */
+    object-fit: contain; /* Säilita pildi kuvasuhe, mahutades selle konteinerisse */
+}
+
+
+.contentcontainer img.logo {
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+/*  PULMA KONTEINER */
+
+
+.wedding-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+   margin: 70px 0px;
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: auto;
+}
+
+img {
+    margin: 10px;
+}
+
+.subcontainer .img1 {
+    max-height: 100%;
+}
+
+.subcontainer .img2 {
+    max-height: 48.2%;
+}
+
+.subcontainer .img3 {
+    max-height: 48.2%;
+}
+
+.subcontainer .img4 {
+    max-height: 100%;
+}
+
+.subcontainer .img5 {
+    max-height: 48.2%;
+}
+
+.subcontainer .img6 {
+    max-height: 48.2%;
+}
+
+
+/*  STICKER CONTAINER */
+
+.stickercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+    margin: 70px 0px;
+}
+
+
+.substickercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: auto;
+    /* border: 5px solid rgb(94, 120, 238);
+    border-radius: 10px; */
+}
+
+.photo {
+    width: 80%; 
+    height: auto; 
+    margin: 5px; 
+}
+
+.img-poppy,
+.img-butterfly,
+.sticker-cat1,
+.sticker-cat2 {
+    max-height: 150px; 
+    margin: 5px 20px; 
+}
+
+/* NATURE STICKER CONTAINER*/
+
+.naturecontainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+    margin: 70px 0px;
+}
+
+.subnatureconteiner {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+    /* border: 5px solid rgb(94, 120, 238);
+    border-radius: 10px; */
+}
+
+.natureimg {
+    height: 25%;
+    padding: 10px 20px;
+}
+
+/*  DIPLOMA CONTEINER  */
+
+.diplomacontainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+    margin: 70px 0px;
+}
+
+.subdiplomaconteiner {
+    /* display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center; */
+    height: 100%;
+    /* width: 50%; */
+    /* border: 5px solid rgb(94, 120, 238);
+    border-radius: 10px; */
+}
+
+.diplomaimg {
+    height: 90%;
+    width: auto;
+    padding: 20px;
+}
+
+/*  POSTCARD CONTEINER  */
+
+.postcardcontainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+    margin: 70px 0px;
+}
+
+.subpostcardconteiner {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* width: 50%; */
+    /* border: 5px solid rgb(94, 120, 238);
+    border-radius: 10px; */
+}
+
+.postcardimg {
+    height: 80%;
+    width: auto;
+    padding: 20px;
+}
+
+/*  VOLUNTARY WORK  */
+
+.voluntarycontainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+    margin: 70px 0px;
+}
+
+.subvoluntaryconteiner {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* width: 50%; */
+    /* border: 5px solid rgb(94, 120, 238);
+    border-radius: 10px; */
+}
+
+.voluntaryimg1 {
+    height: 80%;
+    width: auto;
+    padding: 20px;
+}
+
+.voluntaryimg2 {
+    /* height: 80%; */
+    width: 50%;
+    /* width: auto; */
+    padding: 20px;
+}
+
+
+/*  BOOK ILLUSTRATION CONTAINER 1  */
+
+.book1container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+    margin: 70px 0px;
+}
+
+.subbook1container {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    /* height: 90%; */
+    /* width: 50%; */
+    /* border: 5px solid rgb(94, 120, 238);
+    border-radius: 10px; */
+}
+
+.book1img {
+    width: 20%;
+    padding: 10px;
+}
+
+
+/*  BOOK ILLUSTRATION CONTAINER 2  */
+
+.book2container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+    margin: 70px 0px;
+}
+
+.subbook2container {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    /* height: 90%; */
+    /* width: 50%; */
+    /* border: 5px solid rgb(94, 120, 238);
+    border-radius: 10px; */
+}
+
+.book2img {
+    width: 20%;
+    padding: 10px;
+}
+
+/*  PATTERNS CONTAINER 1 & 2 */
+
+.patterncontainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid rgb(238, 94, 164);
+    border-radius: 10px; */
+    margin: 70px 0px;
+}
+
+.subpatterncontainer {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    /* height: 90%; */
+    /* width: 50%; */
+    /* border: 5px solid rgb(94, 120, 238);
+    border-radius: 10px; */
+}
+
+.patternimg {
+    width: 30%;
+    padding: 10px;
+}
+
+.patternunicornimg {
+    width: 40%;
+}
+
+
+
+
+
+
+
+.centered-line {
+    width: 80%; /* Määrake joone laius vastavalt soovile */
+    margin: 0 auto; /* Aseta joon horisontaalselt keskele */
+    border-color: rgb(50, 50, 50); /* Määrake joone värv vastavalt soovile */
+    opacity: 0.3;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+  } */
+
+
+  /*  BACK BUTTON  */
+
+.back-button {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+    color: #222;
+    text-decoration: none;
+  }
+
+
+  .text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px 50px;
+}
