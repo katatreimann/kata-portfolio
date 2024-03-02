@@ -102,16 +102,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Close warning
 
+function hideWarning() {
+  var warning = document.getElementById('warning');
+  warning.style.display = 'none';
+}
 
-
-
-
-
-
-
-
-
+// Hide warning after 10 seconds
+setTimeout(hideWarning, 10000);
 
 
 

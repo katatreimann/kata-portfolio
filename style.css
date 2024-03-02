@@ -195,6 +195,16 @@ hr {
 
 
 
+.warning {
+    background-color: #ffcccc; /* Red background color */
+    color: #990000; /* Dark red text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
 
 /* Media Query*/
 
